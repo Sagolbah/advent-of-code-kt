@@ -1,7 +1,7 @@
 import kotlin.math.max
 
 fun main() {
-    fun solve1(input: List<String>): Long {
+    fun part1(input: List<String>): Long {
         var ans: Long = -1
         var curr: Long = 0
         for (line in input) {
@@ -16,7 +16,7 @@ fun main() {
         return ans
     }
 
-    fun solve2(input: List<String>): Long {
+    fun part2(input: List<String>): Long {
         val elves = mutableListOf<Long>()
         var curr: Long = 0  // assume all input is > 0
         for (line in input) {
@@ -34,6 +34,6 @@ fun main() {
     }
 
     val input = readInput("Day01")
-    println(solve1(input))
-    println(solve2(input))
+    println(part1(input))
+    println(part2(input))
 }
